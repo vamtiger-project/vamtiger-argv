@@ -1,0 +1,31 @@
+{
+  "name": "vamtiger-argv",
+  "version": "0.0.0",
+  "description": "This contains convenience methods for accessing commandline arguments.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test --booya kasha --abra"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vamtiger-project/vamtiger-argv.git"
+  },
+  "keywords": [
+    "vamtiger",
+    "command-line",
+    "arguments",
+    "argv"
+  ],
+  "author": "James-Alex Matthews IV",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vamtiger-project/vamtiger-argv/issues"
+  },
+  "homepage": "https://github.com/vamtiger-project/vamtiger-argv#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.3.0",
+    "mocha": "^2.5.3",
+    "sinon": "^1.17.4"
+  }
+}
