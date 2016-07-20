@@ -1,6 +1,6 @@
 {
   "name": "vamtiger-argv",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "This contains convenience methods for accessing commandline arguments.",
   "main": "index.js",
   "scripts": {
