@@ -8,10 +8,17 @@ npm install --save vamtiger-argv
 ```
 
 ## Usage
+Any [Node.js](https://nodejs.org/en/) script can be executed with commandline arguments.
+```bash
+node someNodeProgram.js --someArgument someValue --someOtherArgument --yetAnotherArgument someOtherValue
+```
+
 Commandline arguments can be referenced by name using the **_get_** _method_.
 ```javascript
 const Argv = require('vamtiger-argv'),
     argv = new Argv();
 
-argv.get('someArgument');
+argv.get('someArgument'); // someValue
+argv.get('someOtherArgument') // 'valueNotSpecified'
+argv.get('yetAnotherArgument') // 'someOtherValue'
 ```
