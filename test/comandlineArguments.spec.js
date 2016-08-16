@@ -31,4 +31,40 @@ describe('Commandline arguments', function () {
 
         done();
     });
+
+    it('should reference the next value for raw arguments.', function (done) {
+        const argument = 'kasha',
+            expectedArgumentValue = '--abra';
+
+        expect(argv.next(argument)).to.equal(expectedArgumentValue);
+
+        done();
+    });
+
+    it('should return "true" when checking for a defined argument.', function (done) {
+        const argument = 'booya',
+            expectedReturnValue = true;
+
+        expect(argv.has(argument)).to.equal(expectedReturnValue);
+
+        done();
+    });
+
+    it('should return "true" when checking for a defined raw argument.', function (done) {
+        const argument = '--booya',
+            expectedReturnValue = true;
+
+        expect(argv.has(argument)).to.equal(expectedReturnValue);
+
+        done();
+    });
+
+    it('should return "false" when checking for an undefined argument.', function (done) {
+        const argument = 'vamtiger',
+            expectedReturnValue = false;
+
+        expect(argv.has(argument)).to.equal(expectedReturnValue);
+
+        done();
+    });
 });

@@ -7,15 +7,55 @@ const valueNotSpecified = 'valueNotSpecified';
  * This defines a class for conveniently accessing command-line arguments.
  **/
 class Argv {
-    constructor () {
+    constructor() {
         this._referenceArguments = this._referenceArguments.bind(this);
         
         this._regex = this.__regex;
+        this._rawArgument = this.__rawArgument;
         this._argument = this.__argument;
     }
 
-    get (argument) {
-        return this._argument.get(argument);
+    get(argument) {
+        let argumentValue = this._argument.get(argument);
+
+        return argumentValue;
+    }
+
+    next(argument) {
+        let argumentValue;
+
+        process.argv.find((currentArgument, argumentIndex) => {
+            if (currentArgument === argument) {
+                argumentValue = process.argv[argumentIndex + 1];
+
+                return true;
+            }
+        });
+
+        return argumentValue;
+    }
+
+    has(argument) {
+        let hasArgument = this._argument.has(argument);
+
+        if (!hasArgument)
+            hasArgument = this._has(argument);
+
+        return hasArgument;
+    }
+
+    _has(argument) {
+        let hasArgument = false;
+
+        process.argv.find((currentArgument, argumentIndex) => {
+            if (currentArgument === argument) {
+                hasArgument = true;
+
+                return true;
+            }
+        });
+
+        return hasArgument;
     }
 
     get __regex() {
