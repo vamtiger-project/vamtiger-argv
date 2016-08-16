@@ -13,7 +13,7 @@ Any [Node.js](https://nodejs.org/en/) script can be executed with commandline ar
 node someNodeProgram.js --someArgument someValue
 ```
 
-Dash-prefixed commandline arguments can be referenced by name using the **_get_** _method_.
+Commandline arguments can be referenced by name using the **_get_** _method_.
 ```javascript
 const Argv = require('vamtiger-argv'),
     argv = new Argv();
