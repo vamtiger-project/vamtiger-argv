@@ -36,5 +36,6 @@ const Argv = require('vamtiger-argv'),
 
 argv.has('someArgument'); // true
 argv.has('--someArgument'); // true
+argv.has('someValue'); // true
 argv.has('someOtherArgument'); // false
 ```
