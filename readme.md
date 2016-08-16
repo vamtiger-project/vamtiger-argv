@@ -29,7 +29,7 @@ const Argv = require('vamtiger-argv'),
 argv.next('--someArgument'); // someValue
 ```
 
-The **_next_** _method_ can be used to check whether a commandline arguments is present.
+The **_has_** _method_ can be used to check whether a commandline arguments is present.
 ```javascript
 const Argv = require('vamtiger-argv'),
     argv = new Argv();
