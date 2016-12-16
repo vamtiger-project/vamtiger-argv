@@ -67,4 +67,12 @@ describe('Commandline arguments', function () {
 
         done();
     });
+
+    it('should return the first property if present', function (done) {
+        const expectedReturnValue = /^--booya$/;
+        
+        expect(argv.first()).to.match(expectedReturnValue);
+
+        done();
+    })
 });

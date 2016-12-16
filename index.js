@@ -35,6 +35,12 @@ class Argv {
         return argumentValue;
     }
 
+    first() {
+        let firstArgument = process.argv.find(argument => this._regex.argumentDash.test(argument));
+
+        return firstArgument;
+    }
+
     has(argument) {
         let hasArgument = this._argument.has(argument);
 

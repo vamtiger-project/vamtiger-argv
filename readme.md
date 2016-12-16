@@ -21,6 +21,14 @@ const Argv = require('vamtiger-argv'),
 argv.get('someArgument'); // someValue
 ```
 
+The first argument be referenced by using the **__first__** _method_.
+```javascript
+const Argv = require('vamtiger-argv'),
+    argv = new Argv();
+
+argv.first(); // --someArgument
+```
+
 Raw commandline arguments can also be referenced by using the **_next_** _method_.
 ```javascript
 const Argv = require('vamtiger-argv'),
