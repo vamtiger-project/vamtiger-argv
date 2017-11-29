@@ -1,17 +1,18 @@
 {
   "compileOnSave": true,
   "compilerOptions": {
-    "target": "es2015",
+    "target": "es2016",
     "module": "commonjs",
-    "outDir": "Library",
+    "outDir": "build",
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
     "noImplicitThis": true,
     "alwaysStrict": true,
-    "sourceMap": true
+    "sourceMap": true,
+    "declaration": true
   },
   "include": [
-		"Source/**/*"
+		"source/**/*"
 	]
 }

@@ -7,21 +7,23 @@
         {
             "type": "node",
             "request": "launch",
-             "name": "Unit Tests",
+            "name": "Unit Tests",
             "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
             "args": [
+                "--recursive",
                 "-u",
                 "tdd",
                 "--timeout",
                 "999999",
                 "--colors",
-                "${workspaceRoot}/Library/Test",
-                "--recursive"
+                "${workspaceRoot}/build/test",
+                "--booya",
+                "kasha"
             ],
-            "internalConsoleOptions": "openOnSessionStart",
             "outFiles": [
-                "${workspaceRoot}/Library/**/*.js"
-            ]
+                "${workspaceRoot}/build/**/*.js"
+            ],
+            "protocol": "auto"
         }
     ]
 }
