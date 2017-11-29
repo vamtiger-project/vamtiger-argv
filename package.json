@@ -1,6 +1,6 @@
 {
   "name": "vamtiger-argv",
-  "version": "1.2.1-0",
+  "version": "1.2.1",
   "description": "This contains convenience methods for accessing commandline arguments.",
   "main": "build",
   "types": "build/index.d.ts",
