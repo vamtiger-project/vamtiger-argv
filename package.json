@@ -35,12 +35,12 @@
     "chai-as-promised": "^5.3.0",
     "mocha": "^4.0.1",
     "sinon": "^4.0.2",
-    "typescript": "^2.6.2"
+    "typescript": "^2.6.2",
+    "vamtiger-node-typescript-commit": "^0.0.39"
   },
   "dependencies": {
     "@types/chai": "^4.0.4",
     "cha": "^0.2.1",
-    "vamtiger-node-typescript-commit": "^0.0.16",
     "vamtiger-regex-leading-dash": "^1.0.10",
     "xregexp": "^3.2.0"
   }

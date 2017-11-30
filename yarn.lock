@@ -278,9 +278,15 @@ typescript@*, typescript@^2.6.2:
   version "2.6.2"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.6.2.tgz#3c5b6fd7f6de0914269027f03c0946758f7673a4"
 
-vamtiger-argv@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/vamtiger-argv/-/vamtiger-argv-1.2.0.tgz#4962fcf6aa151ac80b5917fb598de331772d5733"
+vamtiger-argv@^1.2.0, vamtiger-argv@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/vamtiger-argv/-/vamtiger-argv-1.2.1.tgz#fe6f4fd309097d3aa7630fded07b0687a4fdb77e"
+  dependencies:
+    "@types/chai" "^4.0.4"
+    cha "^0.2.1"
+    vamtiger-node-typescript-commit "^0.0.16"
+    vamtiger-regex-leading-dash "^1.0.10"
+    xregexp "^3.2.0"
 
 vamtiger-bash@^0.0.11:
   version "0.0.11"
@@ -294,6 +300,15 @@ vamtiger-node-typescript-commit@^0.0.16:
   dependencies:
     bluebird "^3.5.1"
     vamtiger-argv "^1.2.0"
+    vamtiger-bash "^0.0.11"
+    xregexp "^3.2.0"
+
+vamtiger-node-typescript-commit@^0.0.39:
+  version "0.0.39"
+  resolved "https://registry.yarnpkg.com/vamtiger-node-typescript-commit/-/vamtiger-node-typescript-commit-0.0.39.tgz#b10719aba1caab1dd9b50267317353ddcd699351"
+  dependencies:
+    bluebird "^3.5.1"
+    vamtiger-argv "^1.2.1"
     vamtiger-bash "^0.0.11"
     xregexp "^3.2.0"
 
