@@ -1,11 +1,11 @@
 {
   "name": "vamtiger-argv",
-  "version": "1.2.4",
+  "version": "1.2.5-0",
   "description": "This contains convenience methods for accessing commandline arguments.",
   "main": "build",
   "types": "build/index.d.ts",
   "scripts": {
-    "test": "npm run build && mocha build/test --recursive --booya kasha --sameArg value1 --sameArg value2",
+    "test": "mocha build/test --recursive --booya kasha --sameArg value1 --sameArg value2",
     "build": "tsc",
     "commit": "vamtigerNodeTypescriptCommit --push --publish"
   },
