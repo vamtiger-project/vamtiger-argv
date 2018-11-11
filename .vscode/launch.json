@@ -18,7 +18,13 @@
                 "--colors",
                 "${workspaceRoot}/build/test",
                 "--booya",
-                "kasha"
+                "kasha",
+                "--formula",
+                "-x^2 + 6x - 11",
+                "--sameArg",
+                "value1",
+                "--sameArg",
+                "value2"
             ],
             "outFiles": [
                 "${workspaceRoot}/build/**/*.js"

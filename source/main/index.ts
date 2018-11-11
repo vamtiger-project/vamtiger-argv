@@ -24,6 +24,20 @@ export default class Args extends Map<RawArgument, RawArgument|undefined> implem
         return getNextArgument({arg, args});
     }
 
+    getAll(arg: string) {
+        const argRegex = new RegExp(`${arg}$`);
+        const args = this.raw;
+        const values = new Set() as Set<string>;
+
+        args.forEach((currentArg, index) => {
+            if(currentArg.match(arg)) {
+                values.add(args[++index]);
+            }
+        });
+
+        return Array.from(values);
+    }
+
     _initialize(arg: RawArgument, index: Index, args: RawArguments) {
         const context = this;
 

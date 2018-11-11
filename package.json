@@ -5,7 +5,7 @@
   "main": "build",
   "types": "build/index.d.ts",
   "scripts": {
-    "test": "mocha build/test --recursive --booya kasha",
+    "test": "npm run build && mocha build/test --recursive --booya kasha --sameArg value1 --sameArg value2",
     "build": "tsc",
     "commit": "vamtigerNodeTypescriptCommit --push --publish"
   },
