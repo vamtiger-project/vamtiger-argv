@@ -16,6 +16,17 @@ class Args extends Map {
         const args = this.raw;
         return get_next_argument_1.default({ arg, args });
     }
+    getAll(arg) {
+        const argRegex = new RegExp(`${arg}$`);
+        const args = this.raw;
+        const values = new Set();
+        args.forEach((currentArg, index) => {
+            if (currentArg.match(arg)) {
+                values.add(args[++index]);
+            }
+        });
+        return Array.from(values);
+    }
     _initialize(arg, index, args) {
         const context = this;
         initialize_1.default({ context, arg, index, args });

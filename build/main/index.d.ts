@@ -5,5 +5,6 @@ export default class Args extends Map<RawArgument, RawArgument | undefined> impl
     constructor();
     readonly raw: string[];
     next(arg: string): string | undefined;
+    getAll(arg: string): string[];
     _initialize(arg: RawArgument, index: Index, args: RawArguments): void;
 }
