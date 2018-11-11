@@ -23,7 +23,7 @@ const Args = require('vamtiger-argv');
 
 Any [Node.js](https://nodejs.org/en/) script can be executed with commandline arguments.
 ```bash
-node someNodeProgram.js --someArgument someValue
+node someNodeProgram.js --someArgument someValue --anotherArg anotherValue1 --anotherArg anotherValue2
 ```
 
 Commandline arguments can then be referenced by name using the **_get_** _method_.
@@ -31,6 +31,7 @@ Commandline arguments can then be referenced by name using the **_get_** _method
 const args = new Args();
 
 args.get('someArgument'); // someValue
+args.getAll('anotherArg'); // ['anotherValue1', 'anotherValue2']
 ```
 
 The first argument be referenced by using the **__first__** _method_.
