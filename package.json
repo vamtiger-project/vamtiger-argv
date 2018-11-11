@@ -26,22 +26,22 @@
   },
   "homepage": "https://github.com/vamtiger-project/vamtiger-argv#readme",
   "devDependencies": {
-    "@types/mocha": "^2.2.43",
-    "@types/node": "^8.0.53",
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^2.2.48",
+    "@types/node": "^8.10.37",
     "@types/sinon": "^2.3.7",
     "@types/typescript": "^2.0.0",
     "@types/xregexp": "^3.0.29",
+    "cha": "^0.2.1",
     "chai": "^3.5.0",
     "chai-as-promised": "^5.3.0",
-    "mocha": "^4.0.1",
-    "sinon": "^4.0.2",
-    "typescript": "^2.6.2",
-    "vamtiger-node-typescript-commit": "^0.0.39",
-    "@types/chai": "^4.0.4",
-    "cha": "^0.2.1"
+    "mocha": "^4.1.0",
+    "sinon": "^4.5.0",
+    "typescript": "^2.9.2",
+    "vamtiger-node-typescript-commit": "^0.0.39"
   },
   "dependencies": {
-    "vamtiger-regex-leading-dash": "^1.0.10",
+    "vamtiger-regex-leading-dash": "^1.0.14",
     "xregexp": "^3.2.0"
   }
 }
